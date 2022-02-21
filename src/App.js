@@ -1,5 +1,6 @@
 import React, {component} from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
+import Directory from './components/DirectoryComponent';
 import './App.css';
 
 
@@ -11,6 +12,7 @@ function App() {
           <NavbarBrand href="/">BreedShare</NavbarBrand> 
         </div>
       </Navbar>
+      <Directory/>
     </div>
   );
 }
