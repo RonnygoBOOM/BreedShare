@@ -25,9 +25,9 @@ class Directory extends Component {
                 },
                 {
                     id: 4,
-                    name: 'Dachschund',
-                    image: 'assets/images/whippet.jpg',
-                    description: 'The Whippet, like the Greyhound, is an elegant, slender dog. While not quite as fast as the speed of light, the breed is the fastest domesticated animal in its weight class, reaching up to 35 mph.'
+                    name: 'Greyhound',
+                    image: 'assets/images/greyhound.jpg',
+                    description: 'The champion sprinter of dogdom, the Greyhound is a gentle, noble, and sweet-tempered companion with an independent spirit. For thousands of years these graceful hounds have been an object of fascination for artists, poets, and kings. Greyhounds are the essence of the dog breeders credo Form follows function. From the narrow, aerodynamic skull to the shock-absorbing pads of the feet, Greyhounds are perfectly constructed for high-speed pursuit.'
                 }
             ]
         };
@@ -36,7 +36,7 @@ class Directory extends Component {
     render() {
         const directory = this.state.breed.map(breed => {
             return (
-                <div className="col">
+                <div key={breed.id} className="col">
                     <h2>{breed.name}</h2>
                     <img className="directory-image" src={breed.image} alt={breed.name} />
                     <p>{breed.description}</p>
