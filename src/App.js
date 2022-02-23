@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import Directory from './components/DirectoryComponent';
 import './App.css';
-import { BREED } from './shared/breedObjects';
+import { BREED } from './shared/breed';
 
 
 class App extends Component {

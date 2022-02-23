@@ -19,7 +19,7 @@ class Directory extends Component {
             return (
                 <div className="col">
                 <div key={breed.id}>
-                    <Card className="directory-card" onClick={() => this.onBreedSelect(breed)}>
+                    <Card className="directory-card mt-4 m-1" onClick={() => this.onBreedSelect(breed)}>
                         <CardImg width="100%" className="directory-image" src={breed.image} alt={breed.name} />
                         <CardImgOverlay>
                             <CardTitle>{breed.name}</CardTitle>   

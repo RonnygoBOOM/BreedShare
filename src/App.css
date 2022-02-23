@@ -34,3 +34,6 @@ body {
     border-color: rgb(24, 121, 231);
     border-width: 2px;
 }
+.comment {
+    text-align: center;
+}

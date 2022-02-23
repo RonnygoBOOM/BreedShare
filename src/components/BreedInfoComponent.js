@@ -11,9 +11,15 @@ class BreedInfo extends Component {
 renderComments(comments) {
         if (comments) {
             return (
-                <div className="col-md-5 m-1">
-                    <h4>Comments</h4>
-                    {this.props.breed.comments.map(comment => <div key={comment.id}>{comment.text}<br />{comment.author} {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</div>)}
+                <div className="container">
+                    <div className="col-md-8 offset-md-2 mt-4">
+                        <h4>Comments</h4>
+                        {this.props.breed.comments.map(comment => 
+                        <div key={comment.id}>{comment.text}
+                        <br />--{comment.author} 
+                        {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</div>
+                        )}
+                    </div>
                 </div>
             );
         }
@@ -24,7 +30,7 @@ renderComments(comments) {
     renderBreed(breed) {
         return (
             <div className="row">
-                <div className="col col-md-8 offset-md-2 m-1">
+                <div className="col-md-8 offset-md-2 mt-4">
                     <Card>
                         <CardImg top src={breed.image2} alt={breed.name} />
                         <CardBody>
@@ -41,10 +47,14 @@ renderComments(comments) {
 
         if (this.props.breed) {
             return (
-                <div>
-                    {this.renderBreed(this.props.breed)}
-                    {this.renderComments(this.props.breed.comments)}
-                </div>
+                <>
+                    <div>
+                        {this.renderBreed(this.props.breed)}
+                    </div>
+                    <div>
+                        {this.renderComments(this.props.breed.comments)}
+                    </div>
+                </>
             );
         }
         return(
