@@ -1,3 +1,15 @@
+body {
+    font-family: 'Varela round';
+}
+.card-title {
+    font: 500 .85rem 'Varela round', cursive;
+}
+
+.card-img-overlay .card-title {
+    color: white;
+    background-color: rgba(0,0,0,.5);
+}
+
 .directory-image {
     max-width: 500px;
     max-height: 500px;

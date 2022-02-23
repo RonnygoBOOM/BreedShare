@@ -8211,6 +8211,16 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
+typeface-supermercado-one@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-supermercado-one/-/typeface-supermercado-one-1.1.13.tgz#09a2e672495d3489e6b67a1d87a5807f607599e8"
+  integrity sha512-OksJsPLuoDB0sMZE+tMNdzxnntMziClfziZu19B3s7CoTKzXFYH62lGdam1nXKn1/r7fg3VYIzCyltNlurvjmw==
+
+typeface-varela-round@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-varela-round/-/typeface-varela-round-1.1.13.tgz#dcf8b80ff19736bb2128cbdc148c24bc265539d5"
+  integrity sha512-wmi0jFV+17iJHn5irfaaWTVZZKo9ZGgrb2Ydvg/S5UXGxDxVCLhYZfTvbhLSPEOwuR+nP3rjOy7ImZPoD1vAaw==
+
 unbox-primitive@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/unbox-primitive/-/unbox-primitive-1.0.1.tgz#085e215625ec3162574dc8859abee78a59b14471"

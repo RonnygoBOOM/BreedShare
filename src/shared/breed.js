@@ -3,7 +3,7 @@ export const BREED = [
         id: 0,
         name: 'Windsprite',
         image: 'assets/images/windsprite-snow.jpg',
-        image2: 'assets/images/windsprite-backlit.jpg',
+        image2: 'assets/images/windsprite-backlit-cropped.jpg',
         description: 'Windsprites (formerly known as Longhaired Whippets) are a delightful, small, coated sighthound. Although closely related, they are a totally separate breed from the more widely known smooth coated Whippets.'
     },
     {
@@ -16,8 +16,8 @@ export const BREED = [
     {
         id: 2,
         name: 'Whippet',
-        image: 'assets/images/whippet.jpg',
-        image2: 'assets/images/whippets.png',
+        image: 'assets/images/whippet2.jpg',
+        image2: 'assets/images/whippet-leaves.jpg',
         description: 'The Whippet, like the Greyhound, is an elegant, slender dog. While not quite as fast as the speed of light, the breed is the fastest domesticated animal in its weight class, reaching up to 35 mph.'
     },
     {
