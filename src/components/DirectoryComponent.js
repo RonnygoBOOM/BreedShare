@@ -16,6 +16,7 @@ class Directory extends Component {
     renderSelectedBreed(breed) {
         if (breed) {
             return (
+                <div className="col col-md-8 offset-md-2">
                 <Card>
                     <CardImg top src={breed.image2} alt={breed.name} />
                     <CardBody>
@@ -23,6 +24,7 @@ class Directory extends Component {
                         <CardText>{breed.description}</CardText>
                     </CardBody>
                 </Card>
+                </div>
             );
         }
         return <div />;
@@ -31,7 +33,8 @@ class Directory extends Component {
     render() {
         const directory = this.props.breed.map(breed => {
             return (
-                <div key={breed.id} className="col">
+                <div className="col">
+                <div key={breed.id}>
                     <Card onClick={() => this.onBreedSelect(breed)}>
                         <CardImg width="100%" className="directory-image" src={breed.image} alt={breed.name} />
                         <CardImgOverlay>
@@ -39,12 +42,13 @@ class Directory extends Component {
                         </CardImgOverlay>
                     </Card>
                 </div>
+                </div>
             );
         });
         return (
             <div className="container">
                 <div className="row">
-                    {directory}
+                        {directory}  
                 </div>
                 <div className="row">
                     <div className="col">

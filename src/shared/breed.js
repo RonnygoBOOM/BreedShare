@@ -10,7 +10,7 @@ export const BREED = [
         id: 1,
         name: 'Silken Windhound',
         image: 'assets/images/silken-windhound.jpg',
-        image2: 'assets/images/silken-windhound-black-and-white.jpg',
+        image2: 'assets/images/silken-windhound-white.jpg',
         description: 'The Silken Windhound is an elegant, small to medium-sized sighthound, with a moderately long, silky coat. Its classic lines and athletic build are the hallmarks of a true coursing dog. When viewing a Silken Windhound, one has the impression of grace, balance and strength integrated with exceptional running ability.'
     },
     {
