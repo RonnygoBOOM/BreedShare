@@ -1,33 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
-class BreedInfo extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        }
-    }
-
-renderComments(comments) {
-        if (comments) {
-            return (
-                <div className="container">
-                    <div className="col-md-8 offset-md-2 mt-4">
-                        <h4>Comments</h4>
-                        {this.props.breed.comments.map(comment => 
-                        <div key={comment.id}>{comment.text}
-                        <br />--{comment.author} 
-                        {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</div>
-                        )}
-                    </div>
-                </div>
-            );
-        }
-        return <div/>;
-    }
 
 
-    renderBreed(breed) {
+   function RenderBreed({breed}) {
         return (
             <div className="row">
                 <div className="col-md-8 offset-md-2 mt-4">
@@ -43,26 +19,42 @@ renderComments(comments) {
         );
     }   
 
-    render() {
+    function RenderComments({comments}) {
+        if (comments) {
+            return (
+                <div className="container">
+                    <div className="col-md-8 offset-md-2 mt-4">
+                        <h4>Comments</h4>
+                        {comments.map(comment => 
+                        <div key={comment.id}>{comment.text}
+                        <br />--{comment.author} 
+                        {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</div>
+                        )}
+                    </div>
+                </div>
+            );
+        }
+        return <div/>;
+    }
 
-        if (this.props.breed) {
+    function BreedInfo(props) {
+
+        if (props.breed) {
             return (
                 <>
                     <div>
-                        {this.renderBreed(this.props.breed)}
+                        <RenderBreed breed={props.breed}/>
                     </div>
                     <div>
-                        {this.renderComments(this.props.breed.comments)}
+                        <RenderComments comments={props.breed.comments}/>
                     </div>
                 </>
             );
         }
         return(
             <div>
-
             </div>
         );
     }
-}
 
 export default BreedInfo;
