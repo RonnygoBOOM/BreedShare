@@ -1,0 +1,1 @@
+Fix the BreedInfoComponent (or css) so that it doesnt create blank white space on the right side of the window that forces a horizontal scroll bar

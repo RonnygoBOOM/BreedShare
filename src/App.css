@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Varela round';
 }
@@ -36,4 +37,9 @@ body {
 }
 .comment {
     text-align: center;
+}
+
+.site-footer {
+    background-image: linear-gradient(white, rgb(89, 113, 139));
+    padding: 20px 0;
 }

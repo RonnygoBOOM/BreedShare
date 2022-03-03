@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import { Navbar, NavbarBrand } from 'reactstrap';
+import Header from './HeaderComponent';
 import Directory from './DirectoryComponent';
+import Footer from './FooterComponent';
 import { BREED } from '../shared/breed';
 import BreedInfo from './BreedInfoComponent';
 
@@ -21,13 +22,10 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <Navbar dark color="primary">
-          <div className="container">
-            <NavbarBrand href="/">BreedShare</NavbarBrand> 
-          </div>
-        </Navbar>
+        <Header />
         <Directory breed={this.state.breed} onClick={breedId => this.onBreedSelect(breedId)}/>
         <BreedInfo breed={this.state.breed.filter(breed => breed.id === this.state.selectedBreed)[0]} />
+        <Footer />
       </div>
     );
   }
