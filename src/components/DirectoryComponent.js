@@ -2,10 +2,10 @@ import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 
 
-function RenderDirectoryItem({breed, onClick}) {
+function RenderDirectoryItem({breed}) {
     return (
             <div key={breed.id}>
-                <Card className="directory-card mt-4 m-1" onClick={() => onClick(breed.id)}>
+                <Card>
                     <CardImg width="100%" className="directory-image" src={breed.image} alt={breed.name} />
                     <CardImgOverlay>
                         <CardTitle>{breed.name}</CardTitle>   
@@ -20,7 +20,7 @@ function Directory(props) {
     const directory = props.breed.map(breed => {
         return (
             <div className="col">
-                <RenderDirectoryItem breed={breed} onClick={props.onClick}/>
+                <RenderDirectoryItem breed={breed} />
             </div>
         );
     });
