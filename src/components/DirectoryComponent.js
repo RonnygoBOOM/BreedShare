@@ -5,7 +5,7 @@ import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 function RenderDirectoryItem({breed}) {
     return (
             <div key={breed.id}>
-                <Card>
+                <Card className="directory-card mt-4 m-1">
                     <CardImg width="100%" className="directory-image" src={breed.image} alt={breed.name} />
                     <CardImgOverlay>
                         <CardTitle>{breed.name}</CardTitle>   
@@ -14,6 +14,7 @@ function RenderDirectoryItem({breed}) {
             </div>
     );
 }
+
 
 function Directory(props) {
 
@@ -34,3 +35,5 @@ function Directory(props) {
 }
 
 export default Directory;
+
+
