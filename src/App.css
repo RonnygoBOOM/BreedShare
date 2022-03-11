@@ -3,6 +3,11 @@ body {
     font-family: 'Varela round';
 }
 
+h2 {
+    font-family: 'Varela round';
+    padding-top: 1em;
+    padding-bottom: .5em;
+}
 .card {
     justify-content: center;
 }
