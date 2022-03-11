@@ -1,3 +1,4 @@
+Add comments, and get in the habit of adding comments regularly
 Fix the BreedInfoComponent (or css) so that it doesnt create blank white space on the right side of the window that forces a horizontal scroll bar
 Read documentation for React-Router-Dom new syntax for Redirect
 Read documentation for Nav (react)

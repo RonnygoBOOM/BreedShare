@@ -8,6 +8,7 @@ class App extends Component {
 
   render() {
     return (
+      /*Browser Router has to encompass all of the main div in app.js */
       <BrowserRouter>
         <div className="App">
           <Main />
