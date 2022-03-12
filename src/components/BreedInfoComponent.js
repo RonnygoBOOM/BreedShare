@@ -19,7 +19,7 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
         );
     }   
 
-    function RenderComments({comments}) {
+    /*function RenderComments({comments}) {
         if (comments) {
             return (
                 <div className="container">
@@ -36,7 +36,7 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
             );
         }
         return <div/>;
-    }
+    }*/
 
     function BreedInfo(props) {
 
@@ -46,9 +46,9 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
                     <div>
                         <RenderBreed breed={props.breed}/>
                     </div>
-                    <div>
-                        <RenderComments comments={props.comments}/>
-                    </div>
+                    {/*<div>
+                        <RenderComments comments={props.breed.comments}/>
+            </div>*/}
                 </>
             );
         }

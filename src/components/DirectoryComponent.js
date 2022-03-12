@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import BreedInfo from './BreedInfoComponent';
 
 
 function RenderDirectoryItem({breed, onClick}) {
@@ -28,11 +29,19 @@ function Directory(props) {
         );
     });
     return (
+        <>
         <div className="container">
             <div className="row">
                     {directory}  
             </div>
         </div>
+        <div className="container">
+            <div className="row">
+                <BreedInfo breed={props.breed.filter(breed => breed.id === props.selectedBreed)[0]}/>
+            </div>
+        </div>
+        
+        </>
     );
 }
 
