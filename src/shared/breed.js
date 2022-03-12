@@ -1,6 +1,7 @@
 export const BREED = [
     {
         id: 0,
+        breedId: 0,
         name: 'Windsprite',
         featured: true,
         image: 'assets/images/windsprite-snow.jpg',
@@ -9,6 +10,7 @@ export const BREED = [
     },
     {
         id: 1,
+        breedId: 1,
         name: 'Silken Windhound',
         featured: false,
         image: 'assets/images/silken-windhound.jpg',
@@ -17,6 +19,7 @@ export const BREED = [
     },
     {
         id: 2,
+        breedId: 2,
         name: 'Whippet',
         featured: false,
         image: 'assets/images/whippet2.jpg',
@@ -25,6 +28,7 @@ export const BREED = [
     },
     {
         id: 3,
+        breedId: 3,
         name: 'Greyhound',
         featured: false,
         image: 'assets/images/greyhound.jpg',

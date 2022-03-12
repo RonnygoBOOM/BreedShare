@@ -47,7 +47,7 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
                         <RenderBreed breed={props.breed}/>
                     </div>
                     <div>
-                        <RenderComments comments={props.breed.comments}/>
+                        <RenderComments comments={props.comments}/>
                     </div>
                 </>
             );
