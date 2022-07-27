@@ -3,15 +3,15 @@ import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
 
 
-   function RenderBreed({breed}) {
+   function RenderBreed(props) {
         return (
             <div className="row">
                 <div className="col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 mt-4">
                     <Card>
-                        <CardImg top src={breed.image2} alt={breed.name} />
+                        <CardImg top src={props.breed.image2} alt={props.breed.name} />
                         <CardBody>
-                            <CardTitle>{breed.name}</CardTitle>
-                            <CardText>{breed.description}</CardText>
+                            <CardTitle>{props.breed.name}</CardTitle>
+                            <CardText>{props.breed.description}</CardText>
                         </CardBody>
                     </Card>
                 </div>
