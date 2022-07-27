@@ -47,4 +47,8 @@ h2 {
 .site-footer {
     background-image: linear-gradient(white, rgb(89, 113, 139));
     padding: 20px 0;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
